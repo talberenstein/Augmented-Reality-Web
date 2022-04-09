@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	camera.position.set(1, 1, 5);
 
 	const renderer = new THREE.WebGLRenderer({ alpha: true });
-	renderer.setSize(500, 500);
+	renderer.setSize(1000, 1000);
 	renderer.render(scene, camera);
 
 	const video = document.createElement("video");
@@ -31,6 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	document.body.appendChild(video);
 	document.body.appendChild(renderer.domElement);
+
+	// const ar = new SOME_AR_ENGINE();
+	// while (true) {
+	// 	await nextVideoFrameReady();
+	// 	const { position, rotation } = ar.computeObjectPose(video);
+	// 	cube.position = position;
+	// 	cube.rotation = rotation;
+	// }
 });
 
 
