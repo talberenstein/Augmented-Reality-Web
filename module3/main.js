@@ -11,6 +11,7 @@ import { loadGLTF } from "../applications/libs/loader.js"
 //         })
 //     })
 // }
+
 document.addEventListener('DOMContentLoaded', () => {
     const start = async () => {
 
